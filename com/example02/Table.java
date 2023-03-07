@@ -28,5 +28,8 @@ public class Table {
     public String getType() {
         return type;
     }
-
+    public float setLength(int newvalue){
+        length = newvalue;
+        return length;
+    }
 }
