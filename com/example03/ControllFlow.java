@@ -23,6 +23,24 @@ public class ControllFlow {
         //getForEach()
         getForEach();
 
+        System.out.println("----break----");
+        //getBreak()
+        getBreak();
+        //getBreak2()
+        getBreak2();
+        //getBreakWithLable()
+        getBreakWithLable();
+
+
+        System.out.println("----continue----");
+        //getContinue()
+        getContinue();
+
+        System.out.println("----return----");
+        //getReturn()
+        getReturn();
+
+
     }
 
     /*
@@ -146,6 +164,79 @@ public class ControllFlow {
         int[] numbers = {1, 2, 3, 4, 5};
         for (int i: numbers){
             System.out.println("number : " + i);
+        }
+    }
+
+    /*
+    break语句
+     */
+    private static void getBreak(){
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int i : numbers){
+            System.out.println("number is : " + i );
+            if (i == 3){
+                break;
+            }
+        }
+    }
+    /*
+    双重循环中的break
+    输出重复的数
+     */
+    private static void getBreak2(){
+        int[] num1 = {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] num2 = {2, 3, 5, 8, 11};
+        for (int i : num1){
+            for (int j : num2){
+                if (i == j){
+                    System.out.println("重复数字：" + i);
+                    break;
+                }
+            }
+        }
+    }
+    /*
+    break指定循环层
+     */
+    private static void getBreakWithLable(){
+        int[] num1 = {1,2,3,4,5,6,7,8,9};
+        int[] num2 = {2,3,5,8,11,19};
+        first:
+        for (int i : num1){
+            second:
+            for (int j : num2){
+                if (i == j){
+                    System.out.println("相同数字为：" + i);
+                    break first;
+                }
+            }
+        }
+    }
+
+    /*
+    基于continue语句
+     */
+    private static void getContinue(){
+        int[] number={1,2,3,4,5,6,7,8,9};
+        for (int i : number){
+            if (i == 5){
+                continue;
+            }
+            System.out.println("The number is : " + i);
+        }
+    }
+
+    /*
+    基于return语句
+    return终止当前方法，将控制流程返回到调用该方法处（main函数）
+     */
+    private static void getReturn(){
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int i = 0; i < numbers.length; i++){
+            if (numbers[i] == 3){
+                return;
+            }
+            System.out.println("返回的数：" + numbers[i]);
         }
     }
 
