@@ -1,20 +1,35 @@
 package com.example02;
 
 public class Bicycle {
-    int cadence;
-    int speed;
-    int gear;
-    //改变频率
-    void changeCadence(int newvalue){
-        cadence = newvalue;
+    private int cadence;
+    private int speed;
+    private int gear;
+    public int getCadence() {
+        return cadence;
     }
-    //改变速度
-    void changeSpeed(int newvalue){
-        speed = newvalue;
+
+    public void setCadence(int cadence) {
+        this.cadence = cadence;
     }
-    //改变档位
-    void changeGear(int newvalue){
-        gear = newvalue;
+
+    public int getGear() {
+        return gear;
+    }
+
+    public void setGear(int gear) {
+        this.gear = gear;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public Bicycle bicycle(){
+        return new Bicycle();
     }
 }
 

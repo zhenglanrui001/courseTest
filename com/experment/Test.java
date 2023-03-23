@@ -9,11 +9,9 @@ public class Test {
     private static void LeapYearTest(int startyear, int endyear) {
         for (int i = startyear; i <= endyear; i++) {
             if ((i % 4 == 0 && i % 100 != 0) || i % 400 == 0) {
-                System.out.print(i);
-                System.out.print(" ");
+                System.out.println(i);
             }
         }
-        System.out.println("\n");
     }
 
     private static void BubbleSortTest(){

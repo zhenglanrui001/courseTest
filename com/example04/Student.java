@@ -40,6 +40,7 @@ public class Student {
     public static void main(String[] args) {
         Student student01 = new Student("Bo", 18, Student.MALE);
         Student student02 = new Student("sun", 19, Student.FEMALE);
+        System.out.println(Student.MALE);
         System.out.println(student01.getName());
         System.out.println(student01.getSex());
     }
