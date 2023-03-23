@@ -4,5 +4,6 @@ public class StaticTest {
         Student student = new Student("wang", 18, Student.FEMALE);
         System.out.println(student.getName());
         System.out.println(student.getSex());
+        //Student里面创建的对象无法调用
     }
 }
