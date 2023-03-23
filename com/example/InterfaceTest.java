@@ -1,4 +1,4 @@
-package com.Combination;
+package com.example;
 
 public class InterfaceTest {
     public static void main(String[] args) {

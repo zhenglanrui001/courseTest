@@ -1,4 +1,4 @@
-package com.Combination.entity;
+package com.example.entity;
 
 public class Course {
     private int number;

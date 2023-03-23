@@ -1,9 +1,9 @@
-package com.Combination;
+package com.example;
 
-import com.example24.initialorder.C;
-import org.example.entity.Course;
-import org.example.entity.Student;
-import org.example.entity.Teacher;
+
+import com.example.entity.Course;
+import com.example.entity.Student;
+import com.example.entity.Teacher;
 
 public class Test {
     public static void main(String[] args) {

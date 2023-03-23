@@ -1,4 +1,4 @@
-package com.Combination;
+package com.example;
 
 public class Club {
     private String name;

@@ -1,4 +1,4 @@
-package com.Combination;
+package com.example;
 
 public class Undergradute implements Playable, Learnable{
     private String name;

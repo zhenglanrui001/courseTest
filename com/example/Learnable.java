@@ -1,4 +1,4 @@
-package com.Combination;
+package com.example;
 
 public interface Learnable {
     int test(String courseName);
